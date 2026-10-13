@@ -1,0 +1,98 @@
+{
+  "phases": {
+    "vision": {
+      "count": 1,
+      "total_ms": 10.437472343444824
+    },
+    "prefill": {
+      "count": 1,
+      "total_ms": 30.169471740722656
+    },
+    "sample": {
+      "count": 16,
+      "total_ms": 10.766015946865082
+    },
+    "decode": {
+      "count": 15,
+      "total_ms": 127.73625707626343
+    }
+  },
+  "ops": {
+    "vision/vision/conv": {
+      "count": 1,
+      "total_ms": 0.20076799392700195
+    },
+    "vision/vision/norm": {
+      "count": 48,
+      "total_ms": 0.5638400088064373
+    },
+    "vision/vision/attention": {
+      "count": 23,
+      "total_ms": 3.4093759953975677
+    },
+    "vision/vision/mlp_linear": {
+      "count": 46,
+      "total_ms": 4.883840061724186
+    },
+    "vision/vision/activation": {
+      "count": 23,
+      "total_ms": 0.3456640029326081
+    },
+    "vision/adapter/linear": {
+      "count": 2,
+      "total_ms": 0.14316799864172935
+    },
+    "vision/adapter/norm": {
+      "count": 1,
+      "total_ms": 0.012223999947309494
+    },
+    "prefill/llm/VocabParallelEmbedding": {
+      "count": 1,
+      "total_ms": 0.011136000044643879
+    },
+    "prefill/llm/embedding": {
+      "count": 1,
+      "total_ms": 0.03417599946260452
+    },
+    "prefill/llm/norm": {
+      "count": 49,
+      "total_ms": 0.3249920033849776
+    },
+    "prefill/llm/attention": {
+      "count": 72,
+      "total_ms": 5.879647981375456
+    },
+    "prefill/llm/mlp_linear": {
+      "count": 48,
+      "total_ms": 12.334016397595406
+    },
+    "prefill/llm/activation": {
+      "count": 24,
+      "total_ms": 0.20905600395053625
+    },
+    "decode/llm/VocabParallelEmbedding": {
+      "count": 15,
+      "total_ms": 0.6487360000610352
+    },
+    "decode/llm/embedding": {
+      "count": 15,
+      "total_ms": 0.3807679978199303
+    },
+    "decode/llm/norm": {
+      "count": 735,
+      "total_ms": 8.535360030829906
+    },
+    "decode/llm/attention": {
+      "count": 1080,
+      "total_ms": 37.60419204365462
+    },
+    "decode/llm/mlp_linear": {
+      "count": 720,
+      "total_ms": 65.94822389259934
+    },
+    "decode/llm/activation": {
+      "count": 360,
+      "total_ms": 1.139872009633109
+    }
+  }
+}

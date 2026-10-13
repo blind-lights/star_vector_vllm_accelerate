@@ -1,0 +1,34 @@
+{
+  "_name_or_path": "ServiceNow/starvector-1b-im2svg",
+  "adapter_norm": "batch_norm",
+  "adapter_size": "large",
+  "architectures": [
+    "StarVectorForCausalLM"
+  ],
+  "auto_map": {
+    "AutoConfig": "starvector_arch.StarVectorConfig",
+    "AutoModelForCausalLM": "starvector_arch.StarVectorForCausalLM"
+  },
+  "dropout": 0.1,
+  "hidden_size": 2048,
+  "hidden_size_scale": 2,
+  "image_encoder_type": "clip",
+  "image_size": 224,
+  "init_type": "glorot",
+  "max_length_train": 8192,
+  "max_position_embeddings": 8192,
+  "model_type": "starvector",
+  "multi_query": true,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_kv_heads": 4,
+  "starcoder_model_name": "/home/blossonadmin/kernel-agent/vllm/models/starcoderbase-1b",
+  "torch_dtype": "float16",
+  "train_LLM": true,
+  "train_image_encoder": false,
+  "transformers_version": "4.40.1",
+  "use_cache": true,
+  "use_flash_attn": true,
+  "vocab_size": 49156,
+  "image_token_index": 49154
+}

@@ -1,0 +1,66 @@
+{
+  "phases": {
+    "vision": {
+      "count": 1,
+      "total_ms": 9.358336448669434
+    },
+    "prefill": {
+      "count": 1,
+      "total_ms": 28.918752670288086
+    },
+    "sample": {
+      "count": 33,
+      "total_ms": 21.970336258411407
+    },
+    "decode": {
+      "count": 32,
+      "total_ms": 181.24595165252686
+    }
+  },
+  "ops": {
+    "vision/vision/conv": {
+      "count": 1,
+      "total_ms": 0.20371200144290924
+    },
+    "vision/vision/norm": {
+      "count": 48,
+      "total_ms": 0.42470400501042604
+    },
+    "vision/vision/mlp_linear": {
+      "count": 46,
+      "total_ms": 4.750816069543362
+    },
+    "vision/vision/activation": {
+      "count": 23,
+      "total_ms": 0.33631999883800745
+    },
+    "vision/adapter/linear": {
+      "count": 2,
+      "total_ms": 0.14316799864172935
+    },
+    "vision/adapter/norm": {
+      "count": 1,
+      "total_ms": 0.012959999963641167
+    },
+    "prefill/llm/embedding": {
+      "count": 1,
+      "total_ms": 0.03030399978160858
+    },
+    "prefill/llm/norm": {
+      "count": 49,
+      "total_ms": 0.32054400304332376
+    },
+    "prefill/llm/attention": {
+      "count": 72,
+      "total_ms": 5.856480002403259
+    },
+    "prefill/llm/mlp_linear": {
+      "count": 48,
+      "total_ms": 12.286048412322998
+    },
+    "prefill/llm/activation": {
+      "count": 24,
+      "total_ms": 0.21062400192022324
+    }
+  }
+}

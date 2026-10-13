@@ -1,0 +1,17 @@
+# 嵌套仓库的临时备份，避免被打进本次快照
+.git.bak
+
+# 模型权重（数 GB，超过 GitHub 单文件 100MB 限制）
+*.safetensors
+
+# 本地编译产物
+*.so
+*.so.bak
+
+# 构建依赖与缓存
+vllm/.deps/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+**/.cache/
